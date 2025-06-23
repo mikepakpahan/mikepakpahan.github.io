@@ -27,7 +27,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             {/* Kita pakai warna putih bersih, dan tambahin border biar keliatan jelas */}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-[#6B6E70]" // Menggunakan putih, ditambah border secondaryLight
+              className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-[#6B6E70]" // Menggunakan putih, ditambah border secondaryLight
             >
               {/* Ini diubah: Icon GitHub, kalau aslinya putih perlu diganti icon gelap atau invert warna di CSS */}
               <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
