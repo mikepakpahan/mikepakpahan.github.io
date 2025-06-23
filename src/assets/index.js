@@ -1,11 +1,15 @@
 import logo from "./mike.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
-import mobile from "./mobile.png";
+import mobile from "./android.png";
 import web from "./web.png";
+import iot from "./iot.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import design from "./design.png";
+import photo from "./camera.png";
+import music from "./guitar.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -30,4 +34,37 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-export { logo, backend, creator, mobile, web, github, menu, close, css, docker, figma, git, html, javascript, mongodb, nodejs, reactjs, redux, tailwind, typescript, threejs, meta, shopify, starbucks, tesla, carrent, jobit, tripguide };
+export {
+  logo,
+  design,
+  photo,
+  music,
+  iot,
+  backend,
+  creator,
+  mobile,
+  web,
+  github,
+  menu,
+  close,
+  css,
+  docker,
+  figma,
+  git,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  threejs,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  carrent,
+  jobit,
+  tripguide,
+};

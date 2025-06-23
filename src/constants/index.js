@@ -1,4 +1,33 @@
-import { mobile, backend, creator, web, javascript, typescript, html, css, reactjs, redux, tailwind, nodejs, mongodb, git, figma, docker, meta, starbucks, tesla, shopify, carrent, jobit, tripguide, threejs } from "../assets";
+import {
+  mobile,
+  iot,
+  design,
+  photo,
+  music,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+  carrent,
+  jobit,
+  tripguide,
+  threejs,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -15,22 +44,40 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const skillCategories = [
   {
-    title: "Web Developer",
-    icon: web,
+    category: "Software Development",
+    skills: [
+      {
+        title: "Web Developer",
+        icon: web, // Ganti "web" dengan variabel icon-mu
+      },
+      {
+        title: "Mobile Developer",
+        icon: mobile, // Ganti "mobile" dengan variabel icon-mu
+      },
+      {
+        title: "IoT Enthusiast",
+        icon: iot, // Ganti "iot" dengan variabel icon-mu
+      },
+    ],
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
+    category: "Design & Creativity",
+    skills: [
+      {
+        title: "UI/UX Designer",
+        icon: design, // Ganti "design" dengan variabel icon-mu
+      },
+      {
+        title: "Photographer",
+        icon: photo, // Ganti "photo" dengan variabel icon-mu
+      },
+      {
+        title: "Musician",
+        icon: music, // Ganti "music" dengan variabel icon-mu
+      },
+    ],
   },
 ];
 
@@ -231,4 +278,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { skillCategories, technologies, experiences, testimonials, projects };
