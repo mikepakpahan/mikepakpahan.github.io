@@ -31,10 +31,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // template_oz696bn
-    // service_ftzaslx
-    // l5xkDsiaoPJl_t-LQ
-
     emailjs
       .send(
         "service_ftzaslx",
@@ -70,46 +66,55 @@ const Contact = () => {
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        // ➡️ PERUBAHAN DI SINI:
+        // Dari bg-[#F0F2F5] (primaryLight) menjadi bg-white (putih bersih)
+        // Ditambah border dan warna border agar ada pemisah yang jelas
+        className="flex-[0.75] bg-white p-8 rounded-2xl shadow-xl border border-[#D1D5DB]" // Background putih, border abu-abu terang, shadow lebih kuat
+      >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-[#1A1A1A] font-medium mb-4">Your Name</span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-[#F0F2F5] py-4 px-6 placeholder:text-[#6B6E70] text-[#1A1A1A] rounded-lg outline-none border border-transparent focus:border-[#6A5ACD] font-medium transition-colors duration-200" // Input field bg primaryLight, focus border ungu
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
+            <span className="text-[#1A1A1A] font-medium mb-4">Your email</span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-[#F0F2F5] py-4 px-6 placeholder:text-[#6B6E70] text-[#1A1A1A] rounded-lg outline-none border border-transparent focus:border-[#6A5ACD] font-medium transition-colors duration-200"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-[#1A1A1A] font-medium mb-4">Your Message</span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-[#F0F2F5] py-4 px-6 placeholder:text-[#6B6E70] text-[#1A1A1A] rounded-lg outline-none border border-transparent focus:border-[#6A5ACD] font-medium transition-colors duration-200"
             />
           </label>
 
-          <button type="submit" className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary">
+          <button
+            type="submit"
+            className="bg-[#6A5ACD] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-[#8A2BE2] hover:bg-[#8A2BE2] transition-colors duration-200" // Tambah hover effect
+          >
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
