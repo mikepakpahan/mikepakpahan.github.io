@@ -1,5 +1,6 @@
 import {
   mobile,
+  workshop,
   iot,
   design,
   photo,
@@ -8,6 +9,7 @@ import {
   creator,
   web,
   javascript,
+  php,
   typescript,
   html,
   css,
@@ -23,10 +25,14 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
   jobit,
   tripguide,
   threejs,
+  weatherplan,
+  gdrive,
+  github,
+  diary,
+  flutter,
 } from "../assets";
 
 export const navLinks = [
@@ -50,15 +56,15 @@ const skillCategories = [
     skills: [
       {
         title: "Web Developer",
-        icon: web, // Ganti "web" dengan variabel icon-mu
+        icon: web,
       },
       {
         title: "Mobile Developer",
-        icon: mobile, // Ganti "mobile" dengan variabel icon-mu
+        icon: mobile,
       },
       {
         title: "IoT Enthusiast",
-        icon: iot, // Ganti "iot" dengan variabel icon-mu
+        icon: iot,
       },
     ],
   },
@@ -67,15 +73,15 @@ const skillCategories = [
     skills: [
       {
         title: "UI/UX Designer",
-        icon: design, // Ganti "design" dengan variabel icon-mu
+        icon: design,
       },
       {
         title: "Photographer",
-        icon: photo, // Ganti "photo" dengan variabel icon-mu
+        icon: photo,
       },
       {
         title: "Musician",
-        icon: music, // Ganti "music" dengan variabel icon-mu
+        icon: music,
       },
     ],
   },
@@ -95,16 +101,16 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "PHP",
+    icon: php,
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -113,10 +119,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -129,10 +131,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -217,64 +215,78 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description: "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "EfkaWokrshop",
+    description:
+      "Sebuah ekosistem digital lengkap yang dirancang untuk menjembatani antara bengkel motor modern dengan para pelanggannya. Dibangun dengan cinta, kopi, dan begadang ala anak TI, sistem ini mengintegrasikan alur booking servis yang dinamis dengan platform e-commerce untuk penjualan sparepart, dibungkus dalam antarmuka yang intuitif baik untuk customer maupun admin.",
     tags: [
       {
-        name: "react",
+        name: "phpvanila",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "figma",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: workshop,
+    project_link: "https://github.com/mikepakpahan/EfkaWorkshop.git",
+    link_icon: github,
   },
   {
-    name: "Job IT",
-    description: "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "WeatherPlan",
+    description:
+      "WeatherPlan adalah aplikasi smart home berbasis IoT yang dapat mengatur jadwal aktivitas dan mengontrol jemuran otomatis sesuai kondisi cuaca. Sistem ini menggunakan ESP32, sensor kelembapan DHT-11, dan sensor hujan untuk mendeteksi lingkungan sekitar, lalu menyimpan data secara real-time ke Firebase dan menampilkannya melalui aplikasi Flutter.",
     tags: [
       {
-        name: "react",
+        name: "figma",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "flutter",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "openweatherapi",
         color: "pink-text-gradient",
       },
+      {
+        name: "arduinoide",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "blue-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: weatherplan,
+    project_link: "https://github.com/mikepakpahan/WeatherPlan.git",
+    link_icon: github,
   },
   {
-    name: "Trip Guide",
-    description: "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "A Photographer's Diary",
+    description:
+      "Developer mode: OFF, photographer mode: ON. This is my visual playground, where I swap debugging code for debugging life through a camera lens. It's a mixed gallery where the high-energy of events, the calculated drama of cinematic shots, and the beautiful randomness of the street all collide. Consider this collection my evidence: definitive proof that I'm programmed to capture more than just bugs.",
     tags: [
       {
-        name: "nextjs",
+        name: "photography",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "sony",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "canon",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: diary,
+    project_link: "https://drive.google.com/drive/folders/1T6cs2X5iWDOYaCUR1vgCGLLlRM87jCdm?usp=drive_link",
+    link_icon: gdrive,
   },
 ];
 
