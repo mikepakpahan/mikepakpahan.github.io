@@ -285,7 +285,7 @@ const projects = [
       },
     ],
     image: diary,
-    project_link: "https://drive.google.com/drive/folders/1T6cs2X5iWDOYaCUR1vgCGLLlRM87jCdm?usp=drive_link",
+    project_link: "../../error.html",
     link_icon: gdrive,
   },
 ];
